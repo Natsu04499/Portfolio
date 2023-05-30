@@ -1,0 +1,41 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.code-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.code-animation {
+	font-family: monospace;
+	font-size: 2em;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 5px solid #fff;
+	padding-right: 0.5em;
+}
+
+.cursor {
+    width: 5px;
+    height: 1.2em;
+    background-color: #fff;
+    animation: blink 1s infinite;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@keyframes typing {
+	from { width: 0; }
+	to { width: 30em; }
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
